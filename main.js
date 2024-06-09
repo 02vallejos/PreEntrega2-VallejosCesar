@@ -1,4 +1,4 @@
-// Primera pre entrega
+// Segunda pre entrega
 // Alumno: Vallejos Cesar 
 // Curso: JavaScript
 // Comisión: 57710
@@ -9,7 +9,7 @@ class Hanged {
   constructor(word) {
     this._word = word.toUpperCase().split('');
     this._hiddenWord = Array(this._word.length).fill('_');
-    this._attempts = 2;
+    this._attempts = 3;
     this._wrongLetters = [];
   }
   get word() {
@@ -31,7 +31,7 @@ class Hanged {
 while (true) {
   let prp = prompt('Este es el juego del ahorado\nAdivine la parabra de seis letras!\nQuiere intentarlo? SI o NO')
   if (prp.toLocaleUpperCase() == 'SI') {
-    const play = new Hanged('coderhouse');
+    const play = new Hanged(choiseWord());
     while (play.attempts > 0 && play._hiddenWord.includes('_')) {
       guess(play, requestLetter());
 
@@ -79,4 +79,19 @@ function guess(objHanged, letter) {
     objHanged.reduceAttempts();
     objHanged.wrongLetters.push(letter);
   }
+}
+function choiseWord() {
+  const words = [
+    "gato",
+    "perro",
+    "casa",
+    "arbol",
+    "libro",
+    "jugar",
+    "cielo",
+    "flor",
+    "piedra",
+    "montaña"
+];
+    return words[Math.floor(Math.random() * words.length)];
 }
