@@ -6,7 +6,7 @@
 ### Segunda pre entrega - Juego del Ahoracado
 - Se elige para esta entrega el juego del Ahorcado.
 - Se aplican los conceptos vistos hasta la clase de lógica de programación, estructuras repetitivas, funciones, objetos y String con sus métodos.
-- La modalidad del juego es de adivinar la palabra oculta.
+- La modalidad del juego es de adivinar la palabra oculta que se elije de forma aleatoria de una serie de palabras almacenadas.
 - Se tiene una cantidad de intentos fija para adivinar la palabra. Si agota la cantidad de intentos pierde el juego.
 
 #### Caracteristicas del código
